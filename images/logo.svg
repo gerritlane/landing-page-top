@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="100 90 300 300" width="300px" height="300px" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <linearGradient id="color-0" bx:pinned="true">
+      <stop style="stop-color: #d8d8d8;"/>
+    </linearGradient>
+    <linearGradient id="color-1" bx:pinned="true">
+      <stop style="stop-color: #f9f7f7;"/>
+    </linearGradient>
+    <linearGradient id="color-2" bx:pinned="true">
+      <stop style="stop-color: #dbe2ef;"/>
+    </linearGradient>
+    <linearGradient id="color-3" bx:pinned="true">
+      <stop style="stop-color: #3f72af;"/>
+    </linearGradient>
+    <linearGradient id="color-4" bx:pinned="true">
+      <stop style="stop-color: #112d4e;"/>
+    </linearGradient>
+  </defs>
+  <rect x="150" y="150" width="200" height="200" style="stroke: url(#color-1); stroke-width: 5px; fill: url(#color-2);" bx:origin="0 0"/>
+  <path d="M 250 95 L 385 315 L 115 315 L 250 95 Z" style="stroke: url(#color-1); paint-order: stroke; fill: url(#color-1);" bx:shape="triangle 115 95 270 220 0.5 0 1@716007da" bx:origin="0 0"/>
+  <path d="M 250 110 L 375 310 L 125 310 L 250 110 Z" style="paint-order: stroke; stroke: url(#color-1); fill: url(#color-3);" bx:shape="triangle 125 110 250 200 0.5 0 1@9caa3683" bx:origin="0 0"/>
+  <text style="fill: url(#color-2); font-family: &quot;Segoe UI&quot;; font-size: 72px; font-weight: 700; text-anchor: middle; white-space: pre;" x="251.723" y="277.095">L P</text>
+</svg>

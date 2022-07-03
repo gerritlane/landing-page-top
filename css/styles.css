@@ -1,0 +1,68 @@
+/* color scheme 
+dark
+#748DA6
+#9CB4CC
+#D3CEDF
+#F2D7D9
+light
+
+*/
+
+:root {
+  --color-darker: #112D4E;
+	--color-dark: #3F72AF;
+	--color-light: #DBE2EF;
+	--color-lighter: #F9F7F7;
+}
+
+body {
+	background-color: var(--color-lighter);
+	color: var(--color-darker);
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	display: flex;
+	flex-direction: column;
+}
+
+img.logo {
+	height: 50px;
+	margin: 10px;
+	width: auto;
+}
+
+div.logo {
+	display: flex;
+	align-items: center;
+	font-style: italic;
+	color: var(--color-light);
+}
+
+div.header, div.footer {
+	background-color: var(--color-darker);
+}
+
+div.header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+ul.header-links {
+	display: flex;
+	list-style: none;
+	list-style-type: none;
+}
+
+li {
+	margin: 5px
+}
+
+div.testimonial, div.call-to-action {
+	background-color: var(--color-dark);
+	color: var(--color-light)
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: var(--color-light)
+}
