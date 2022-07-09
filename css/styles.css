@@ -13,19 +13,22 @@ light
 	--color-dark: #3F72AF;
 	--color-light: #DBE2EF;
 	--color-lighter: #F9F7F7;
+	overflow-x: hidden;
 }
 
 body {
 	background-color: var(--color-lighter);
 	color: var(--color-darker);
-	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-family:'Futura', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	display: flex;
 	flex-direction: column;
+	overflow: hidden;
 }
 
 img.logo {
-	height: 50px;
-	margin: 10px;
+	height: 12vw;
+	max-height: 100px;
+	padding: 10px 15px 0 0;
 	width: auto;
 }
 
@@ -34,6 +37,7 @@ div.logo {
 	align-items: center;
 	font-style: italic;
 	color: var(--color-light);
+	font-size: min(3vw, 26px);
 }
 
 div.header, div.footer {
@@ -45,24 +49,71 @@ div.header {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
+	padding: 0 max(6vw, 10px) 0 max(6vw, 10px);
 }
 
 ul.header-links {
 	display: flex;
 	list-style: none;
 	list-style-type: none;
+	font-size: min(2.5vw, 22px);
+	padding: 0;
 }
 
 li {
-	margin: 5px
+	margin: 10px;
+	white-space: nowrap;
 }
 
-div.testimonial, div.call-to-action {
+div.top.call-to-action {
+	display: flex;
+	align-items: center;
+	background-color: var(--color-darker);
+	color: var(--color-light);
+	padding: 20px max(10vw,20px) 0 max(10vw,20px);
+}
+
+
+div.testimonial {
 	background-color: var(--color-dark);
-	color: var(--color-light)
+	color: var(--color-light);
+	padding: 0 20vw 0 20vw;
 }
 
 a:link, a:visited {
 	text-decoration: none;
-	color: var(--color-light)
+	color: var(--color-light);
+}
+
+a:hover {
+	color: var(--color-lighter);
+	text-decoration: underline;
+	text-underline-offset: 6px;
+}
+
+.call-to-action .subheader {
+	font-size: min(4vw, 26px);
+	font-weight: bolder;
+	color: var(--color-lighter);
+	margin-bottom: 5px;
+	white-space: nowrap;
+}
+
+.call-to-action .text {
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+button.sign-up {
+	background-color: var(--color-dark);
+	border-radius: 10px;
+	border-style: none;
+	padding: 8px 20px 8px 20px;
+	color: var(--color-lighter);
+}
+
+img.call-to-action {
+	width: min(40vw, 400px);
+	flex-shrink: 0;
+	margin: 10vw 0 10vw 10vw;
 }
