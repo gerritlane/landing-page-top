@@ -26,8 +26,7 @@ body {
 }
 
 img.logo {
-	height: 12vw;
-	max-height: 100px;
+	height: min(10vw,100px);
 	padding: 10px 15px 0 0;
 	width: auto;
 }
@@ -37,7 +36,23 @@ div.logo {
 	align-items: center;
 	font-style: italic;
 	color: var(--color-light);
+}
+
+div.logo-text {
+	display: flex;
+	flex-direction: column;
+	white-space: nowrap;
+}
+
+div.logo-text-small {
+	font-size: min(2vw, 16px);
+}
+
+div.logo-text-bigger {
+	margin: .3vw 0 0 0;
 	font-size: min(3vw, 26px);
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-weight: bolder;
 }
 
 div.header, div.footer {
@@ -68,16 +83,15 @@ li {
 div.top.call-to-action {
 	display: flex;
 	align-items: center;
+	justify-content: space-around;
 	background-color: var(--color-darker);
 	color: var(--color-light);
-	padding: 20px max(10vw,20px) 0 max(10vw,20px);
+	padding: 20px max(10vw,20px) 20px max(10vw,20px);
 }
 
-
-div.testimonial {
-	background-color: var(--color-dark);
-	color: var(--color-light);
-	padding: 0 20vw 0 20vw;
+div.call-to-action .left {
+	margin-right: 4vw;
+	max-width: 300px;
 }
 
 a:link, a:visited {
@@ -89,10 +103,15 @@ a:hover {
 	color: var(--color-lighter);
 	text-decoration: underline;
 	text-underline-offset: 6px;
+	cursor: pointer;
+}
+
+button:hover {
+	cursor: pointer;
 }
 
 .call-to-action .subheader {
-	font-size: min(4vw, 26px);
+	font-size: min(3vw, 26px);
 	font-weight: bolder;
 	color: var(--color-lighter);
 	margin-bottom: 5px;
@@ -100,7 +119,7 @@ a:hover {
 }
 
 .call-to-action .text {
-	font-size: 14px;
+	font-size: min(3vw, 14px);
 	margin-bottom: 5px;
 }
 
@@ -115,5 +134,10 @@ button.sign-up {
 img.call-to-action {
 	width: min(40vw, 400px);
 	flex-shrink: 0;
-	margin: 10vw 0 10vw 10vw;
+}
+
+div.testimonial {
+	background-color: var(--color-dark);
+	color: var(--color-light);
+	padding: 0 20vw 0 20vw;
 }
