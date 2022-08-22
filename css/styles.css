@@ -27,7 +27,7 @@ body {
 }
 
 img.logo {
-	height: min(10vw,80px);
+	height: min(8vw,80px);
 	padding: 10px 15px 0 0;
 	width: auto;
 }
@@ -49,14 +49,14 @@ div.logo-text {
 
 div.logo-text-small {
 	margin: .3vw 0 0 0;
-	font-size: min(2vw, 16px);
+	font-size: min(1.5vw, 16px);
 	font-family: 'Josefin Sans';
 	font-style: normal;
 }
 
 div.logo-text-bigger {
 	margin: .3vw 0 0 0;
-	font-size: min(3vw, 26px);
+	font-size: min(2.5vw, 26px);
 	font-family: 'Caudex', 'Cambria', 'Cochin', 'Georgia', Times, 'Times New Roman', serif;
 	font-weight: bolder;
 	color: var(--color-lighter);
